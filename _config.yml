@@ -1,9 +1,9 @@
 # Site settings
-title: "Jekyll Resume Template"
+title: "Resumes"
 description: "A resume template for Jekyll and GitHub Pages sites."
 
-url: http://gehtnicht.at
-baseurl: /cv
+url: http://cv.gehtnicht.at
+baseurl: ''
 
 # Build settings
 markdown: kramdown
