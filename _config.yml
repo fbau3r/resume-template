@@ -10,17 +10,3 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
-
-# Decide which sections to use
-# comment out to hide (Experience is not shown
-# because it is the only required section)
-resume_section_education:       true
-resume_section_projects:        true
-resume_section_skills:          true
-resume_section_recognition:     true
-resume_section_links:           true
-resume_section_associations:    true
-
-# Note: when editing locally, remember to restart
-# your Jekyll server when you edit this file. Changes
-# to _congig.yml are only recognized when the server starts
