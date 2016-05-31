@@ -5,32 +5,32 @@
 
   <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
 
-    <div class="wrapper">
+    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
 
       <header class="page-header">
 
         <!-- You can turn off the avatar in _config.yml by setting to false -->
         {% if page.resume.avatar == 'true' %}
-        <img src="avatar.jpg" alt="my photo" class="avatar">
+        <img src="avatar.jpg" alt="my photo" class="avatar" itemprop="image">
         {% endif %}
 
         <!-- Your name is defined in the _config.yml file -->
-        <h1 class="header-name">{{ page.resume.name }}</h1>
+        <h1 class="header-name" itemprop="name">{{ page.resume.name }}</h1>
 
         <div class="title-bar">
 
           <!-- Your title is also defined in the _config.yml file -->
-          <h2 class="header-title">{{ page.resume.title }}</h2>
+          <h2 class="header-title" itemprop="jobTitle">{{ page.resume.title }}</h2>
 
           <!-- This is the markup for the icon links; moved out to an include because it's very verbose, and you shouldn't ever need to edit the markup (unless you want to re-order the icons); if you want to customize which links appear, define them in the _config.yml file -->
           {% include icon-links.html %}
         </div>
 
-        <div class="executive-summary">
+        <div class="executive-summary" itemprop="description">
           {{ page.resume.executive_summary }}
         </div>
 
-        <a href="mailto:{{ page.resume.contact_email }}" class="contact-button">{% if page.culture == 'de-AT' %}Kontaktieren{% else %}Contact me{% endif %}</a>
+        <a href="mailto:{{ page.resume.contact_email }}" class="contact-button" itemprop="email">{% if page.culture == 'de-AT' %}Kontaktieren{% else %}Contact me{% endif %}</a>
 
       </header>
 
